@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation (Task - 8)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    
+    <div class="container">
+        <form class="form"  method="post"   >
+            <div class="items">
+                <h3><u>Form Validation</u></h3>
+            </div>
+            <div class="items">
+                <label for="name">Your Name</label>
+                <input type="text" id="name">
+            </div>
+            <div class="items">
+                <label for="age">Your age</label>
+                <input type="number" id="age">
+            </div>
+            <div class="items">
+                <label for="email">Your Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="items">
+                <label for="password">Your Password</label>
+                <input type="password" id="password">
+            </div>
+            <div class="items" id="yourdob">
+                <label for="dob">Your DOB</label>
+                <input type="date" id="dob">
+            </div>
+           <!-- Gender Section -->
+            <div class="items">
+                <label>Your Gender:</label>
+                <div class="inline-options">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+            </div>
+
+            <!-- Policy Section -->
+            <div class="items">
+                <label>Agree to the policies?</label>
+                <div class="inline-options">
+                    <label><input type="checkbox" id="policy"> YES</label>
+                    <label><input type="checkbox" id="no"> NO</label>
+                </div>
+            </div>
+
+            <div class="items" id="yourdegree">
+                <label for="degree">Your Degree :</label>
+                <select name="degree" id="degree">
+                    <option value="CSE">Engineering</option>
+                    <option value="Bcom">B-Com</option>
+                    <option value="plustwo">Plustwo</option>
+                </select>
+            </div>
+            <div class="items" >
+                <label for="rasume" id="uploadrasumes">Upload your rasume</label>
+                <input type="file" name="rasume" id="rasume">
+            </div>
+            <div class="items">
+                <label for="yourself">Enter about self</label>
+                <textarea name="about" id="yourself"></textarea>
+            </div>
+            <input type="hidden" id="hidden">
+            <button type="submit" id="submit">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
