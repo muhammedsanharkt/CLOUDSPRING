@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Image Slider</title>
+  <link rel="stylesheet" href="style.css">
+ 
+ 
+</head>
+<body>
+  <h1> <u>IMAGE SLIDER (JS)</u></h1>
+  <div class="slider" id="slider">
+    <img src="https://picsum.photos/id/1015/600/350"  alt="river" class="active">
+    <img src="https://picsum.photos/id/1025/600/350"  alt="dog">
+    <img src="https://picsum.photos/id/1035/600/350" alt="waterfall">
+    <img src="https://picsum.photos/id/1045/600/350" alt="mountain" >
+    <button class="prev" onclick="prevSlide()">←</button>
+    <button class="next" onclick="nextSlide()">→</button>
+    <div class="indicator">
+      <input type="radio" name="slide" id="slide1" checked onclick="currentSlide(1)">
+      <input type="radio" name="slide" id="slide2" onclick="currentSlide(2)">
+      <input type="radio" name="slide" id="slide3" onclick="currentSlide(3)">
+      <input type="radio" name="slide" id="slide4" onclick="currentSlide(4)">
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
