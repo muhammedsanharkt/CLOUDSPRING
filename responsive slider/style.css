@@ -1,0 +1,348 @@
+.container{
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:white
+}
+
+
+
+.navbar{
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    padding:10px 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    
+}
+
+.nav-links{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-style:bold;
+    margin-left: auto;
+    padding-right: 9%;
+    
+}
+.links{
+    transition: all 0.3s ease;
+    
+}
+.links:hover{
+    
+    
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+    
+    
+}
+.links::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background-color: red;
+    transition: width 0.3s ease;
+  }
+
+#logo{
+    text-align: center;
+    width: 150px;
+    
+    margin-left: 9%;
+    transition: filter 0.5s ease;
+}
+
+#header{
+    margin:0;
+    padding: 20;
+    position: fixed;
+    top: 0;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5s ease;
+    z-index: 1000;
+}
+#header.scrolled{
+    background-color: rgb(255, 255, 255 , 0.9);
+    padding: 5px;
+    
+}
+#header.scrolled .nav-links li {
+    color: rgb(57, 57, 138);
+  }
+
+
+
+.div {
+    background-image: url(oceanwp-golfgame-img-001.jpg);
+    background-size: cover; /* This is like object-fit: cover */
+    background-position: center; /* Center the image inside the div */
+    background-repeat: no-repeat;
+    height: 600px;
+}
+.div2{
+    background-image: url(images.jpg);
+    background-size: cover; /* This is like object-fit: cover */
+    background-position: center; /* Center the image inside the div */
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-top: 0;
+}
+.about {
+    margin-left: 9%;
+    
+}
+
+.abouttext {
+    color: white;
+    font-size: 18px;margin-top:30px;
+}
+
+.abouthead {
+    color: white;
+    margin: 0;
+    font-weight: bolder;
+    font-size: 60px;
+    padding-top: 10%;
+}
+
+#secondhead {
+    padding-top: 0;
+}
+
+.aboutbtn {
+    font-size: large;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 20px;
+    width: 250px;
+    color: darkgreen;
+    border-radius: 30px;
+    margin-top: 5%;
+}
+.aboutbtn:hover{
+    background-color: black;
+    color: white;
+    width:240px;
+}
+
+
+.buttondiv{
+display: flex;
+justify-content: space-between;
+    
+        
+      /* or whatever fits your design */
+}
+
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 700px;
+  }
+  
+  /* All slides hidden by default */
+  .slide {
+    display: none;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Active slide shown */
+  .slide.active {
+    display: block;
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  /* Backgrounds */
+  .div {
+    background-image: url('oceanwp-golfgame-img-001.jpg');
+  }
+  
+  .div2 {
+    background-image: url('photo-1562204320-31975a5e09ce.avif'); /* Replace with your second image */
+  }
+
+  .hamburger{
+    display:none;
+    
+    flex-direction: column;
+    cursor: pointer;
+    padding-right:2px;
+    
+  }
+  .hamburger span{
+    background-color: #f9f9f9;
+    height:3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: 0.4s;
+    
+  }
+  
+
+  .footer{
+    
+    background-color: rgba(0, 0, 0, 0.8); /* Black with 50% transparency */
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+  
+    
+  }
+  p{
+    margin:0;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 41px;
+      right: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      gap:10px;
+      text-align: center;
+      
+    }
+    .nav-links.active {
+      display: flex;
+    }
+    .hamburger {
+      display: flex;
+      padding-right: 10px;
+    
+
+    }
+    .nav-links li {
+      color: black;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+  @media (hover: hover) {
+    .nav-links li:hover {
+      
+      color: darkgreen;
+    }
+  }
+
+  
+
+  @media (max-width: 500px) {
+    
+    .aboutbtn{
+        padding: 5px;
+        width:160px;
+    }
+
+    .navbar {
+        position: fixed;  
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        align-items: center;
+      }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 41px;
+      right: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 0;
+      gap:10px;
+      
+    }
+    
+    
+    .nav-links.active {
+      display: flex;
+    }
+    .hamburger {
+      display: flex;
+    }
+    .nav-links li {
+      color: black;
+      text-align: center;
+        padding: 1px;
+      
+      
+    
+    }
+    .abouthead {
+      font-size: 25px;
+      padding-top: 60px;
+      
+      
+    }
+    .abouttext {
+      font-size: 16px;
+      align-items: center;
+      
+      
+    }
+
+  }
+
+  @media (hover: hover) {
+    .nav-links li:hover {
+     
+      color: rgb(255, 255, 255);
+    }
+
+  }
+
+  @media(min-width:769px) and ( max-width: 1000px){
+    .hamburger{
+        display:none;
+    }
+    .nav-links{
+        padding-right:2%;
+        gap:15px;
+        font-weight: lighter;
+        font-size:15px;
+
+       
+  }
+}

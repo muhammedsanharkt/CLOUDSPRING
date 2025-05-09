@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgrey;
+            padding: 0;
+            margin: 0;
+            background-color: rgb(57, 57, 57);
+
+        }
+        .header{
+            margin-top:3%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            color: whitesmoke;
+        }
+        .nav-links{
+            display: flex;
+            list-style:none;
+            gap: 20px;
+            padding-right:9%
+        }
+        .links:hover{
+            cursor: pointer;
+            color:yellow
+        }
+        #logo{
+            padding-left:3%;
+            cursor: pointer;
+            margin: 0;
+        }
+        .about{
+            margin: 0;
+            margin-top:3%;
+            padding-top:0;
+            height:900px;
+            
+        }
+        #welcome{
+            
+            margin: 0;
+            text-align: center;
+            font-size:60px;
+            color: white;
+        }
+        #aboutText{
+            
+
+            text-align: center;
+            color:white
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 id="logo">SANHAR</h1>
+        
+        <ul class="nav-links">
+            <li class="links">ABOUT US</li>
+            <li class="links">CONTACT US</li>
+            <li class="links">SERVICES</li>
+            <li class="links">TESTIMONIAL</li>
+        </ul>
+    </div>
+    <div class="about">
+        <p id="welcome">WELCOME</p>
+        <p id="aboutText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque facilis magni excepturi iusto quos, est nulla dolorum ipsum a eum minima et ea dolores rem totam dignissimos mollitia deleniti illo.</p>
+    </div>
+</body>
+</html>
